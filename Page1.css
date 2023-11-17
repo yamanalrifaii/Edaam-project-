@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-size: 1.7rem;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	background:lightgrey;
+	color:#21201e;
+}
+
+h3{
+	text-align:center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 35px;
+}
+
+.all-products{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.product{
+	overflow: hidden;
+	background: #ffffff;
+	color: #21201e;
+	text-align: center;
+	width: 240px;
+	height: 400px;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 1.2rem;
+	margin: 2rem;
+}
+
+.product .product-title, .product .product-price{
+	font-size: 18px;
+}
+
+.product:hover img{
+	scale:  1.1;
+}
+
+.product:hover {
+	box-shadow: 5px 15px 25px #eeeeee;
+}
+
+.product img {
+	height: 200px;
+	margin: 1rem;
+	transition: all 0.3s;
+}
+
+.product a:link, .product a:visited{
+	color: #ececec;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #2c3e50;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 14px;
+	transition: all 0.2s;
+}
+
+.product a:hover{
+	transform: scale(1.1);
+}
+
+.products .product {
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    text-align: center; 
+    display: inline-block;
+    width: 25%; 
+    vertical-align: top; 
+}
+
+.navbar {
+	overflow: hidden;
+	background-color: #333;
+	position: relative; /* Needed for absolute positioning of the title */
+	padding-left: 120px; /* Adjust this value as needed to prevent overlap */
+	padding-right: 120px; /* Adjust this value as needed to prevent overlap */
+}
+
+
+/* Style the navigation bar links */
+.navbar a, .navbar span {
+	float: left; 
+	color: white;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+/* Centered website name style */
+.navbar .website-name {
+	display: inline-block;
+	width: 55%;
+	justify-content: center;
+	text-align: center;
+	position:relative;
+	left: 40px;
+}
+
+/* Right-aligned items */
+.navbar .right {
+	float: right; /* Align to the right */
+}
+
+/* Clear floats after the columns */
+.navbar:after {
+	content: "";
+	display: table;
+	clear: both;
+}
