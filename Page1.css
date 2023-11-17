@@ -129,3 +129,33 @@ h3{
 	display: table;
 	clear: both;
 }
+
+.filter-buttons {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow */
+    background-color: #f9f9f9; /* Light background color */
+    width: 40% /* Adjust as per requirement */
+}
+
+.filter-btn {
+    background-color: gray;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn:hover {
+    background-color: #45a049; 
+}
+
+.filter-btn.active {
+    background-color: #216837; /* Even darker for active button */
+}
