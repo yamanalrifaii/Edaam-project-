@@ -3,18 +3,53 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Products</title>
-        <link rel="stylesheet" href="Page1.css">
+        <title>Beverages</title>
+        <link rel="icon" href="logo.PNG" type="image/png">
+        <link rel="stylesheet" href="Products.css">
         <script src="Drinks.js"></script>
+        <style>
+        .filter-buttons {
+            text-align: center;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd; 
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2); 
+            background-color: #f9f9f9; 
+            width: 40% 
+        }
+
+        .filter-btn {
+            background-color: rgb(96, 174, 96);
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .filter-btn:hover {
+            background-color: #45a049; 
+        }
+
+        .filter-btn.active {
+            background-color: #216837; 
+        }
+
+        </style>
     </head>
     <body>
-
         <div class="navbar">
-            <a href="#home">Home</a> <!-- This is the home link -->
-            <a href="#contact">Contact Us</a> <!-- This is the contact link -->
-            <span class="website-name">Edaam</span>
-            <a href="#cart" class="right">Shopping Cart</a> <!-- This is the shopping cart link, aligned to the right -->
-            <a href="#login" class="right">Log In</a> <!-- This is the login link, aligned to the right -->
+            <img src="logo.PNG" class="logo"> 
+            <a href="#HOME">Home</a>
+            <a href="#ABOUT">About</a>
+            <a href="#ACCOUNT">Account</a>
+            <a href="#RATE">Rate</a>
+            <a href="#contact" class="right">Contact Us</a>
+            <a href="#cart" class="right">Shopping Cart</a>
+            <a href="#login" class="right">Log In</a>
         </div>
         <div class="filter-buttons">
             <button class="filter-btn" onclick="filterProducts('all')">All</button>
@@ -22,22 +57,12 @@
             <button class="filter-btn" onclick="filterProducts('medium')">Medium</button>
             <button class="filter-btn" onclick="filterProducts('small')">Small</button>
         </div>
-        
-        
-        <div id="home">
-            <!-- Your home page content goes here -->
-        </div>
-    
-        <div id="contact us">
-            <!-- Your contact us content goes here -->
-        </div>
-    
-
+            
         <section class="products">
             <h3>Beverages</h3>
             <div class="all-products">
                 <div class="product" data-size="large">
-                    <img src="Mango.nectar.png" alt="Mango nectar"/>
+                    <img src="./Juices/Mango.nectar.png" alt="Mango nectar"/>
                     <div class="product-info">
                         <h4 class="product-title">Mango nectar
                         </h4>
@@ -46,7 +71,7 @@
                     </div>
                 </div>
                 <div class="product" data-size="small">
-                    <img src="mixedfruits.jpg" alt="mixed fruits">
+                    <img src="./Juices/mixedfruits.jpg" alt="mixed fruits">
                     <div class="product-info">
                         <h4 class="product-title">Mixed fruits juice
                         </h4>
@@ -55,7 +80,7 @@
                     </div>
                 </div>
                 <div class="product" data-size="large">
-                    <img src="orangejuice.png" alt="orange juice">
+                    <img src="./Juices/orangejuice.png" alt="orange juice">
                     <div class="product-info">
                         <h4 class="product-title">Orange juice
                         </h4>
@@ -65,7 +90,7 @@
                     </div>
                 </div>
                 <div class="product" data-size="small">
-                    <img src="Mango.jpg" alt="Mango juice">
+                    <img src="./Juices/Mango.jpg" alt="Mango juice">
                     <div class="product-info">
                         <h4 class="product-title">Mango juice
                             </h4>
@@ -74,7 +99,7 @@
                     </div>
                 </div>
                    <div class="product" data-size="medium">
-                    <img src="Beetroot.png" alt="Beetroot & Blackcurrant juice">
+                    <img src="./Juices/Beetroot.png" alt="Beetroot & Blackcurrant juice">
                     <div class="product-info">
                         <h4 class="product-title">Beetroot and Blackcurrant juice
                             </h4>
@@ -84,16 +109,16 @@
                     </div>
                 </div>
                 <div class="product" data-size="small">
-                    <img src="kiwi.jpg" alt="kiwi juice">
+                    <img src="./Juices/kiwi.jpg" alt="kiwi juice">
                     <div class="product-info">
-                        <h4 class="product-title">Kiwi juice
+                        <h4 class="product-title">Kiwi and Lime juice
                             </h4>
                         <p class="product-price">2.85 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
                     </div>
                 </div>
                 <div class="product" data-size="large">
-                    <img src="pineapple.png" alt="pineapple juice">
+                    <img src="./Juices/pineapple.png" alt="pineapple juice">
                     <div class="product-info">
                         <h4 class="product-title">Pineapple juice
                             </h4>
@@ -102,7 +127,7 @@
                     </div>
                 </div>
                 <div class="product" data-size="large">
-                    <img src="apple.jpg" alt="apple juice">
+                    <img src="./Juices/apple.jpg" alt="apple juice">
                     <div class="product-info">
                         <h4 class="product-title">Apple juice
                             </h4>
@@ -111,7 +136,7 @@
                     </div>
                 </div>
                 <div class="product" data-size="medium">
-                    <img src="green.juice.jpg" alt="Green Juice">
+                    <img src="./Juices/green.juice.jpg" alt="Green Juice">
                     <div class="product-info">
                         <h4 class="product-title">Green Juice
                             </h4>

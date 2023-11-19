@@ -3,22 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Salted Snacks</title>
+        <title>Sweet Snacks</title>
         <link rel="icon" href="logo.PNG" type="image/png">
-        <script src="SaltedSnacks.js"></script>
         <link rel="stylesheet" href="Products.css">
+        <script src="SweetSnacks.js"></script>
         <style>
-            .price-range-filter {
-            margin: 20px;
+            .search-container {
             text-align: center;
-            }
+            margin-bottom: 20px;
+            }   
 
-            .price-range-filter input,
-            .price-range-filter button
-             {
-                margin: 5px;
-                padding: 5px;
-             }
+            .search-container input {
+            width: 50%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+
         </style>
     </head>
     <body>
@@ -33,103 +35,96 @@
             <a href="#login" class="right">Log In</a>
         </div>
 
-        <div class="price-range-filter">
-            <label for="min-price" style="font-size: 20px;">Min Price: </label>
-            <input type="number" id="min-price" value="0">
-        
-            <label for="max-price" style="font-size: 20px;">Max Price: </label>
-            <input type="number" id="max-price" value="4">
-        
-            <button onclick="filterByPrice()">Filter</button>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for snacks" oninput="searchProducts()">
         </div>
-        
 
         <section class="products">
-            <h3>Salted Snacks</h3>
+            <h3>Sweet Snacks</h3>
             <div class="all-products">
                 <div class="product">
-                    <img src="./Pictures/Amwaj.jpg" alt="Amwaj chips"/>
+                    <img src="./Snacks/tamrah.jpg" alt="Tamrah"/>
                     <div class="product-info">
-                        <h4 class="product-title">Amwaj potato chips
+                        <h4 class="product-title">Tamrah Assorted Chocolate Date
                         </h4>
-                        <p class="product-price">4.00 AED</p>
+                        <p class="product-price">39.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
     
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/sohar.jpg" alt="sohar chips">
+                    <img src="./Snacks/Alnasma.jpg" alt="Alnassma whole milk Chocolate">
                     <div class="product-info">
-                        <h4 class="product-title">Sohar chips
+                        <h4 class="product-title">Alnassma Whole Camel milk Chocolate
                         </h4>
-                        <p class="product-price">1.00 AED</p>
+                        <p class="product-price">29.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
     
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/salad.jpg" alt="salad Chips">
+                    <img src="./Snacks/bayara.jpg" alt="Bayara Milk Chocolate Dates with Almond">
                     <div class="product-info">
-                        <h4 class="product-title">Salad chips
+                        <h4 class="product-title">Bayara Milk Chocolate Dates with Almond
                         </h4>
-                        <p class="product-price">3.50 AED</p>
+                        <p class="product-price">29.25 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
     
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/oman.jpg" alt="Oman chips">
+                    <img src="./Snacks/hazelnut.jpg" alt="HAZELNUT DARK CHOCOLATE COATED">
                     <div class="product-info">
-                        <h4 class="product-title">Oman chips
+                        <h4 class="product-title">Hazelnut Dark Chocolate Coated
                             </h4>
-                        <p class="product-price">1.50 AED</p>
+                        <p class="product-price">11.50 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
     
                     </div>
                 </div>
                    <div class="product">
-                    <img src="./Pictures/crackers.jpg" alt="Qrakers chips">
+                    <img src="./Snacks/Raspberry.jpg" alt="Raspberry & Dark Choco Croquant Bar">
                     <div class="product-info">
-                        <h4 class="product-title">Qrakers chips
+                        <h4 class="product-title">Raspberry & Dark Choco Croquant Bar
                             </h4>
-                        <p class="product-price">3.00 AED</p>
+                        <p class="product-price">29.50 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
     
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/Smithscheese.jpg" alt="Smiths square crisps">
+                    <img src="./Snacks/chocolate.jpg" alt="Coconut Chips with Chocolate Flavor">
                     <div class="product-info">
-                        <h4 class="product-title">Smiths square crisps
+                        <h4 class="product-title">Coconut Chips with Chocolate Flavor mini
                             </h4>
-                        <p class="product-price">1.50 AED</p>
+                        <p class="product-price">15.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/Vchips.jpg" alt="Smiths salt and vinegar chipsticks">
+                    <img src="./Snacks/Baklava.jpg" alt="Al Rifai Honey Baklava">
                     <div class="product-info">
-                        <h4 class="product-title">Smiths salt and vinegar chipsticks
+                        <h4 class="product-title">Al Rifai Honey Baklava
                             </h4>
-                        <p class="product-price">3.50 AED</p>
+                        <p class="product-price">90.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/Pofak.jpg" alt="Pofak">
+                    <img src="./Snacks/halwa.jpg" alt="Halwa Rahesh">
                     <div class="product-info">
-                        <h4 class="product-title">Pofak chips
+                        <h4 class="product-title">Halwa Rahesh
                             </h4>
-                        <p class="product-price">0.50 AED</p>
+                        <p class="product-price">25.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
                     </div>
                 </div>
                 <div class="product">
-                    <img src="./Pictures/Baz.jpg" alt="Baz Chips">
+                    <img src="./Snacks/mamoul.jpg" alt="Mamoul Date Filled Shortbread Biscuits">
                     <div class="product-info">
-                        <h4 class="product-title">Baz chips
+                        <h4 class="product-title">Mamoul Date Filled Shortbread Biscuits
                             </h4>
-                        <p class="product-price"> 0.70 AED</p>
+                        <p class="product-price"> 30.00 AED</p>
                         <a class="product-btn" href="#">Add to cart</a>
                     </div>
                 </div>
